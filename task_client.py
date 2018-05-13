@@ -16,8 +16,8 @@ limitations under the License
 '''
 
 
-import requests
 import json
+import requests
 
 
 def print_tasks_from_server():

@@ -2,26 +2,19 @@
 {% block title %}Task List{% endblock %}
 
 {% block scripts %}
-{{ super() }}
-<script src="{{ url_for('static', filename='tasks.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='tasks.js') }}"></script>
+
+</script>
 {% endblock %}
 
 {% block content %}
 <div class="container">
-    <h1>Task list</h1>
+  <h1>Hello, Bootstrap</h1>
+  <div id="tasklist">
 
-    <!-- The div to store the tasks list. It will be populated dynamically, by Javascript -->
-    <div id="tasklist"></div>
+  </div>
+  <div id="inserttask">
 
-    <!-- The div to store the form to insert/update a specific task -->
-    <div id="inserttask">
-        <form id="addForm"class="form-inline" method="POST">
-            <div class="form-group">
-                Task:
-                <input type="text" id = "taskDescription" class="form-control" name="description"/>
-            </div>
-            <button class="form-control" id="addTask">Add</button>
-        </form>
-    </div>
+  </div>
 </div>
 {% endblock %}

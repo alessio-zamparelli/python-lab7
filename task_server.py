@@ -1,19 +1,12 @@
 #!/usr/bin/env python
 
-"""
-Created on Apr 13, 2015
-Last updated on Apr 30, 2018
-
-@author: Luigi De Russis, Teodoro Montanaro, Alberto Monge Roffarello
-"""
-
 from flask import Flask, jsonify, abort, request, Response, render_template
-from flask_bootstrap import Bootstrap
+#from flask_bootstrap import Bootstrap
 
 import db_interaction
 
 app = Flask(__name__)
-Bootstrap(app)
+#Bootstrap(app)
 
 # ---------- FRONT-END Single-page application ------------
 
@@ -106,6 +99,7 @@ def prepare_for_json(item):
     task['urgent'] = item[2]
     return task
 
-
+import sys
 if __name__ == '__main__':
+    print(sys.version_info)
     app.run(debug=True)
