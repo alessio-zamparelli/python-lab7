@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
 from flask import Flask, jsonify, abort, request, Response, render_template
-#from flask_bootstrap import Bootstrap
+from flask_bootstrap import Bootstrap
 
 import db_interaction
 
 app = Flask(__name__)
-#Bootstrap(app)
+Bootstrap(app)
 
 # ---------- FRONT-END Single-page application ------------
 

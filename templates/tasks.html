@@ -2,6 +2,7 @@
 {% block title %}Task List{% endblock %}
 
 {% block scripts %}
+    {{ super() }}
 <script type="text/javascript" src="{{ url_for('static', filename='tasks.js') }}"></script>
 
 </script>
